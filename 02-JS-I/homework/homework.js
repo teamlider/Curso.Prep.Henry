@@ -26,52 +26,65 @@ const nuevoModulo = 21 % 5 === 1;
 // No cambies los nombres de las funciones.
 
 function devolverString(nombre) {
-  return nombre// "Return" la string provista: str
+  // "Return" la string provista: str
   // Tu código:
+  return nombre
 }
 devolverString('sandra');
 
 
 function suma(x, y) {
-  let resultadoSuma =  x + y// "x" e "y" son números
-  return resultadoSuma;// Suma "x" e "y" juntos y devuelve el valor
-  // Tu código:
+  // "x" e "y" son números
+  // Suma "x" e "y" juntos y devuelve el valor
+   // Tu código:
+  let resultadoSuma =  x + y
+  return resultadoSuma;
+ 
 }
 
 suma(5,5);
 
 
 function resta(x, y) {
-  let resultadoResta = x - y// Resta "y" de "x" y devuelve el valor
-  return resultadoResta;// Tu código:
+  // Resta "y" de "x" y devuelve el valor
+  // Tu código:
+  let resultadoResta = x - y
+  return resultadoResta;
 }
 
 resta(18,8);
 
 function multiplica(x, y) {
-  let resultadoMultiplicacion = x * y// Multiplica "x" por "y" y devuelve el valor
-  return resultadoMultiplicacion;           // Tu código:
+// Multiplica "x" por "y" y devuelve el valor
+// Tu código:
+  let resultadoMultiplicacion = x * y
+  return resultadoMultiplicacion;           
 }
 
 multiplica(5,4);
 
 
 function divide(x, y) {
-   let resultadoDivision = x / y// Divide "x" entre "y" y devuelve el valor
-   return resultadoDivision;// Tu código:
+// Divide "x" entre "y" y devuelve el valor
+// Tu código:
+   let resultadoDivision = x / y
+   return resultadoDivision;
 }
 
 divide(15,3);
 
+
 function sonIguales(x, y) {
+// Devuelve "true" si "x" e "y" son iguales
+// De lo contrario, devuelve "false"
+// Tu código:
    if ( x === y ) {
     return true;
+    
    }
 
    return false;
-     // Devuelve "true" si "x" e "y" son iguales
-  // De lo contrario, devuelve "false"
-  // Tu código:
+      
 }
  
 sonIguales(5,5)
@@ -79,12 +92,10 @@ sonIguales(5,5)
 
 
 function tienenMismaLongitud(str1, str2) {
-
-
-  return str1.length === str2.length;
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+  return str1.length == str2.length;
 }
 
 tienenMismaLongitud("sandra","sandra")
@@ -93,20 +104,24 @@ tienenMismaLongitud("sandra","sandra")
 
 
 function menosQueNoventa(num) {
+  // Devuelve "true" si el argumento de la función "num" es menor que noventa
+  // De lo contrario, devuelve "false"
+  // Tu código:
    if (num < 90) {
      return true;
    }
    else {return false;}
     
-  // Devuelve "true" si el argumento de la función "num" es menor que noventa
-  // De lo contrario, devuelve "false"
-  // Tu código:
 }
+
 menosQueNoventa(89);
 
 
 
 function mayorQueCincuenta(num) {
+  // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
+  // De lo contrario, devuelve "false"
+  // Tu código:
   if (num > 50) {
     return true;
   }
@@ -114,9 +129,7 @@ function mayorQueCincuenta(num) {
   else {
     return false;
   }
-  // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
-  // De lo contrario, devuelve "false"
-  // Tu código:
+  
 }
 
 mayorQueCincuenta(65);
@@ -125,18 +138,20 @@ mayorQueCincuenta(65);
 
 
 function obtenerResto(x, y) {
-
+ // Obten el resto de la división de "x" entre "y"
+// Tu código:
   let resultadoModulo = x % y 
   return resultadoModulo;
-  // Obten el resto de la división de "x" entre "y"
-  // Tu código:
+  
 }
 
 obtenerResto(21,4);
 
 
 function esPar(num) {
-
+// Devuelve "true" si "num" es par
+// De lo contrario, devuelve "false"
+// Tu código:
   if (num % 2 === 0) {
     return true;
   }
@@ -144,9 +159,7 @@ function esPar(num) {
 else{
   return false;
 }
-  // Devuelve "true" si "num" es par
-  // De lo contrario, devuelve "false"
-  // Tu código:
+  
 }
 
 esPar(8);
@@ -154,7 +167,9 @@ esPar(8);
 
 
 function esImpar(num) {
-
+// Devuelve "true" si "num" es impar
+// De lo contrario, devuelve "false"
+// Tu código:
 if (num % 2 === 1) {
   return true;
 }
@@ -162,9 +177,7 @@ if (num % 2 === 1) {
 else {
   return false;
 }
-  // Devuelve "true" si "num" es impar
-  // De lo contrario, devuelve "false"
-  // Tu código:
+  
 }
 
 esImpar(3);
@@ -172,10 +185,11 @@ esImpar(3);
 
 
 function elevarAlCuadrado(num) {
-  return Math.pow(num, 2);
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
+  return Math.pow(num, 2);
+  
 }
 
 elevarAlCuadrado(2);
@@ -184,18 +198,21 @@ elevarAlCuadrado(2);
 
 
 function elevarAlCubo(num) {
-  return num * num * num;
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
+  return num * num * num;
+  
 }
+
 elevarAlCubo(3);
 
 
 
 function elevar(num, exponent) {
-  return Math.pow(num, exponent);
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
+  return Math.pow(num, exponent);
+  
 }
 
 elevar(8,4);
@@ -219,14 +236,11 @@ function redondearNumero(num) {
  
 
 
-
-
-
-
 function redondearHaciaArriba(num) {
-  return Math.ceil(num);
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
+  return Math.ceil(num);
+  
 }
 
 redondearHaciaArriba(1.001);
@@ -234,10 +248,11 @@ redondearHaciaArriba(1.001);
 
 
 function agregarSimboloExclamacion(str) {
-  return str + '!';
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return str + '!';
+  
 }
 
 agregarSimboloExclamacion("hello word");
@@ -247,11 +262,12 @@ agregarSimboloExclamacion("hello word");
 
 
 function combinarNombres(nombre, apellido) {
-   let compuesto = nombre + ' ' + apellido;
-  return compuesto;
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
+   let compuesto = nombre + ' ' + apellido;
+  return compuesto;
+  
 }
 
 combinarNombres("jorge","gonzalez");
@@ -262,22 +278,20 @@ combinarNombres("jorge","gonzalez");
 
 
 function obtenerSaludo(nombre) {
-
-  return 'Hola ' + nombre + '!';
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
+  return 'Hola ' + nombre + '!';
+  
 }
 
 
 
-
-
-
 function obtenerAreaRectangulo(alto, ancho) {
-  return alto * ancho;
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+  return alto * ancho;
+  
 }
 
 
