@@ -1,0 +1,30 @@
+
+
+    h1 {
+
+        color: tomato;
+    }
+    
+    h3 {
+        color: tomato;
+    }
+    
+    img {
+        width: 400px;
+    }
+    
+    #thirdDiv {
+        width: 500px;
+        height: 650px;
+        background-color:black;
+        padding: 50px;
+        border: 10PX solid rgb(255, 81, 0);
+    }
+    
+    #spanId {
+        font-size: 18px;
+        margin: 50px;
+    }
+    
+    
+    
